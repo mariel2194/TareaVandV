@@ -1,6 +1,6 @@
 using System;
 
-public class Program
+public class CalculeISR
 {
   
 public struct escala
@@ -64,8 +64,7 @@ public struct sumando
             Console.WriteLine("Monto Invalido, Digite nuevamente");
         }
       
-
-    } thi.exit();
+       Environment.Exit(0);
+    }
 }
-
 
