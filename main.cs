@@ -32,7 +32,7 @@ public class CalculeISR
         double excedente = 0;
       
         
-        Console.WriteLine("Introduce tu sueldo anual");
+        Console.WriteLine("Introduce tu sueldo mensula");
         try
         {
             double sueldo = Double.Parse(Console.ReadLine());
