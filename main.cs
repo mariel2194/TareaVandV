@@ -30,15 +30,12 @@ public class CalculeISR
         double sueldoAnual = 0;
         double IsrTotal = 0;
         double excedente = 0;
-
-
         Console.WriteLine("Introduce tu sueldo mensual");
         try
         {
             double sueldo = Double.Parse(Console.ReadLine());
             if (sueldo < 0)
             {
-
                 {
                     Console.WriteLine("Monto Invalido");
                 }
@@ -72,7 +69,6 @@ public class CalculeISR
                     IsrTotal = ((excedente * porcentaje.alt) + sumando.alt) / 12;
                     Console.WriteLine("El ISR a pagar es: $RD " + Math.Round(IsrTotal, 1));
                 }
-
 
                 Environment.Exit(0);
             }
