@@ -57,20 +57,20 @@ public class CalculeISR
                 {
                     excedente = sueldoAnual - escala.min;
                     IsrTotal = ((excedente * porcentaje.min) + sumando.min) / 12;
-                    Console.WriteLine("El ISR a pagar es: $RD " + IsrTotal);
+                    Console.WriteLine("El ISR a pagar es: $RD " + Math.Round(IsrTotal, 1));
                 }
                 else if (sueldoAnual > escala.med && sueldoAnual <= escala.alt)
                 {
                     excedente = sueldoAnual - escala.med;
                     IsrTotal = ((excedente * porcentaje.med) + sumando.med) / 12;
-                    Console.WriteLine("El ISR a pagar es: $RD  " + IsrTotal);
+                    Console.WriteLine("El ISR a pagar es: $RD  " + Math.Round(IsrTotal, 1));
 
                 }
                 else if (sueldoAnual > escala.alt)
                 {
                     excedente = sueldoAnual - escala.alt;
                     IsrTotal = ((excedente * porcentaje.alt) + sumando.alt) / 12;
-                    Console.WriteLine("El ISR a pagar es: $RD " + IsrTotal);
+                    Console.WriteLine("El ISR a pagar es: $RD " + Math.Round(IsrTotal, 1));
                 }
 
 
